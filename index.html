@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html"; charset="utf-8">
+	<meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+ 	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+
+ 	<script type="text/javascript" charset="utf-8">
+ 		
+ 		function alert() { navigator.notification.alert('Alert de PhoneGap', alertDismissed, 'Boton', 'hecho');
+ 		}
+
+ 		function confirm() { navigator.notification.confirm("Estas seguro?");
+ 		}
+
+ 		function prompt() { navigator.notification.prompt("Esto es un promt");
+ 		}
+
+ 		function beep() { navigator.notification.beep(2);
+ 		}
+
+ 	</script>
+</head>
+<body onload="onBodyLoad()">
+	<h1>Act 4</h1>
+	<p>Actividad que despliega diferentes notificaciones</p>
+
+	<button class="btn btn-primary btn-lg" href='javascript:;' onclick="alert();">Alert</button>  
+	<button class="btn btn-primary btn-lg" href='javascript:;' onclick="confirm();">Confirm</button>  
+	<button class="btn btn-primary btn-lg" href='javascript:;' onclick="prompt();">Prompt</button>  
+	<button class="btn btn-primary btn-lg" href='javascript:;' onclick="beep();">Beep</button>  
+
+
+	
+
+</body>
+</html>
