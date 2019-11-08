@@ -8,7 +8,12 @@
 
  	<script type="text/javascript" charset="utf-8">
  		
- 		function alert() { navigator.notification.alert('Alert de PhoneGap', alertDismissed, 'Boton', 'hecho');
+ 		function alert() { navigator.notification.alert(
+    'Alert de phonegap',  // message
+    alertDismissed,         // callback
+    'Este es un alert',            // title
+    'hecho'                  // buttonName
+);
  		}
 
  		function confirm() { navigator.notification.confirm("Estas seguro?");
